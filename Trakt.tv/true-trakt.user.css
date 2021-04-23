@@ -1,13 +1,13 @@
 /* ==UserStyle==
 @name           Dark-Trakt.tv
-@version        1.0.1
+@version        1.0.2
 @namespace      https://github.com/wadforth/
 @description    True dark theme for Trakt.tv
 @author         Kieran
 @updateURL      https://raw.githubusercontent.com/wadforth/True-Dark/main/Trakt.tv/true-trakt.user.css
 @license        CC-BY-SA-4.0
 ==/UserStyle== */
-@-moz-document url("trakt.tv") {
+@-moz-document domain("trakt.tv") {
 #activity-wrapper, #charts-wrapper, #schedule-wrapper, #charts-minutes-total, #charts-movies-total, #charts-episodes-total, #ondeck-wrapper, #footer-search, #main-search, #charts-minutes-wrapper, #info-wrapper, div.subnav-wrapper, #huckster-content-page, .subnav-wrapper, .interactions, #progress-wrapper.watched, .comment-wrapper .list .subnav .wider .hidden-xs, .seasons, #recent-wrapper, .prev a, .next a, .prev.disabled a, .next.disabled a, .comment-wrapper, #history-items, #collection-items, #rating-items, section.container.list-rows, #user-comments, #network-user-wrapper, section, .above-comment, .users-wrapper, #huckster-desktop-wrapper, .huckster-vip-info, .alert.alert-no-data, h4.character, .episode-stats.hidden-sm, .btn.btn-block.btn-summary.btn-collect, .btn.btn-block.btn-summary.btn-list, .btn.btn-block.btn-summary.btn-comment.new-comment-focus, div.titles, body.settings, #widgets-wrapper, .widget-row.alt, #network-wrapper, #bottom-stats-wrapper .col-stat, #bottom-stats-wrapper .col-stat.alt, #links-wrapper, .panel, .comment {
    color: white !important;
    background-color: #222;
