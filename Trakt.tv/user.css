@@ -7,7 +7,7 @@
 @updateURL      https://raw.githubusercontent.com/wadforth/Dark/master/Trakt.tv/user.css
 @license        CC-BY-SA-4.0
 ==/UserStyle== */
-@-moz-document domain("trakt.tv") {
+@-moz-document url("trakt.tv") {
 #activity-wrapper, #charts-wrapper, #schedule-wrapper, #charts-minutes-total, #charts-movies-total, #charts-episodes-total, #ondeck-wrapper, #footer-search, #main-search, #charts-minutes-wrapper, #info-wrapper, div.subnav-wrapper, #huckster-content-page, .subnav-wrapper, .interactions, #progress-wrapper.watched, .comment-wrapper .list .subnav .wider .hidden-xs, .seasons, #recent-wrapper, .prev a, .next a, .prev.disabled a, .next.disabled a, .comment-wrapper, #history-items, #collection-items, #rating-items, section.container.list-rows, #user-comments, #network-user-wrapper, section, .above-comment, .users-wrapper, #huckster-desktop-wrapper, .huckster-vip-info, .alert.alert-no-data, h4.character, .episode-stats.hidden-sm, .btn.btn-block.btn-summary.btn-collect, .btn.btn-block.btn-summary.btn-list, .btn.btn-block.btn-summary.btn-comment.new-comment-focus, div.titles, body.settings, #widgets-wrapper, .widget-row.alt, #network-wrapper, #bottom-stats-wrapper .col-stat, #bottom-stats-wrapper .col-stat.alt, #links-wrapper, .panel, .comment {
    color: white !important;
    background-color: #222;
@@ -27,7 +27,7 @@ div.shade {
 .popup-video.one-liner.trailer {
    background-color: red !important;
 }
-.see-more-text, h4 a, div.trakt-icon-circle-right.fa, h3 a, season.toggle, .link, p a, .name, li a:hover, #links-wrapper a:hover, .panel .control-label, .active a, {
+.see-more-text, h4 a, div.trakt-icon-circle-right.fa, h3 a, season.toggle, .link, p a, .name, li a:hover, #links-wrapper a:hover, .panel .control-label, .active a {
    color: #54C7FC !important;
 }
 .progress-bar, .page.active {
@@ -75,5 +75,8 @@ div.fanart div.titles {
 .tab.selected {
    background: none !important;
 }
+}
+
+@-moz-document url-prefix("http://trakt.tv") {
 
 }
