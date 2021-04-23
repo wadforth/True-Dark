@@ -1,0 +1,82 @@
+/* ==UserStyle==
+@name           Dark-Trakt.tv
+@version        1.0
+@namespace      https://github.com/wadforth/
+@description    True dark theme for Trakt.tv
+@author         Kieran
+@license        CC-BY-SA-4.0
+==/UserStyle== */
+/*
+    Checkout also my scripts for Trakt.tv
+    More info on: https://git.io/Trakt-Userscripts
+*/
+@-moz-document domain("trakt.tv") {
+#activity-wrapper, #charts-wrapper, #schedule-wrapper, #charts-minutes-total, #charts-movies-total, #charts-episodes-total, #ondeck-wrapper, #footer-search, #main-search, #charts-minutes-wrapper, #info-wrapper, div.subnav-wrapper, #huckster-content-page, .subnav-wrapper, .interactions, #progress-wrapper.watched, .comment-wrapper .list .subnav .wider .hidden-xs, .seasons, #recent-wrapper, .prev a, .next a, .prev.disabled a, .next.disabled a, .comment-wrapper, #history-items, #collection-items, #rating-items, section.container.list-rows, #user-comments, #network-user-wrapper, section, .above-comment, .users-wrapper, #huckster-desktop-wrapper, .huckster-vip-info, .alert.alert-no-data, h4.character, .episode-stats.hidden-sm, .btn.btn-block.btn-summary.btn-collect, .btn.btn-block.btn-summary.btn-list, .btn.btn-block.btn-summary.btn-comment.new-comment-focus, div.titles, body.settings, #widgets-wrapper, .widget-row.alt, #network-wrapper, #bottom-stats-wrapper .col-stat, #bottom-stats-wrapper .col-stat.alt, #links-wrapper, .panel, .comment {
+   color: white !important;
+   background-color: #222;
+}
+.alert-no-data {
+   background-color: #222 !important;
+}
+h2.section, span.trakt-icon-time-play, a.titles-link, a.ignore, a.selected, .runtime, .elapsed, .percentage, .icon.trakt-icon-alarm, .feed-icon, .icon.trakt-icon-rss, h3, span.plays, label, .icon.trakt-icon-divider, icon .trakt-icon-calendar-add, .btn-list-subscribe, .count-text, .icon.trakt-icon-move, .titles, .format-date, .unknown {
+   color: white !important;
+}
+.runtime, .elapsed, .percentage {
+   color: rgba(255, 255, 255, 0.5) !important;
+}
+div.shade {
+   display: none !important;
+}
+.popup-video.one-liner.trailer {
+   background-color: red !important;
+}
+.see-more-text, h4 a, div.trakt-icon-circle-right.fa, h3 a, season.toggle, .link, p a, .name, li a:hover, #links-wrapper a:hover, .panel .control-label, .active a, {
+   color: #54C7FC !important;
+}
+.progress-bar, .page.active {
+   background-color: #54C7FC !important;
+}
+.under-progress-wrapper .progress .progress-bar.spacer {
+   background-color: #193b4b !important;
+}
+#network-wrapper .posters .poster-under, .activity-date, #results-top-wrapper.user-wrapper .stats-wrapper, header#top-nav, header#top-nav:hover, #results-top-wrapper, #boxes-wrapper .row .last-comment, #boxes-wrapper .row .stats .bottom-shade, #boxes-wrapper .row .stats, #cover-wrapper .shadow, body.settings #links-wrapper, body.authorized_applications #links-wrapper, body.applications #links-wrapper, body.widgets #links-wrapper, .panel-heading, .instructions, .above-comment, .comment-wrapper, .comment-wrapper>.interactions, #main-comment>.interactions, .comment-wrapper.featured, .comment-wrapper .interactions, #main-comment .interactions {
+   background-color: #1d1d1d !important;
+}
+.vip-expiring {
+   visibility: hidden !important;
+}
+td:hover {
+   color: #222;
+}
+.panel-heading, .panel {
+   border: solid 1px #1d1d1d !important;
+   color: white !important;
+}
+.base {
+   border: 0px !important;
+   border-color: #222;
+}
+.metadata, .quick-icons.smaller {
+   border: 0px !important;
+}
+.poster, .comment, .comment-wrapper .comment {
+   border-color: solid 1px #1d1d1d !important;
+}
+.username, #text-code, #banner-code, #fanart2-code, #fanart-code, #thumb-code, #poster-code {
+   color: #54C7FC !important;
+}
+div.fanart div.titles {
+   background-color: rgba(34, 34, 34, 0.0) !important;
+}
+#hu-ck-s-t-er-de-sk-top-wrapper {
+   display: none !important;
+}
+.btn-watch {
+   color: white !important;
+   background-color: #8e44ad !important;
+}
+.tab.selected {
+   background: none !important;
+}
+
+}
