@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Dark-Trakt.tv
-@version        1.1.0
+@version        2.0.1
 @namespace      https://github.com/wadforth/
 @description    True dark theme for Trakt.tv
 @author         Kieran
@@ -8,88 +8,126 @@
 @license        CC-BY-SA-4.0
 ==/UserStyle== */
 @-moz-document domain("trakt.tv") {
-#activity-wrapper, #charts-wrapper, #schedule-wrapper, #charts-minutes-total, #charts-movies-total, #charts-episodes-total, #ondeck-wrapper, #footer-search, #main-search, #charts-minutes-wrapper, #info-wrapper, div.subnav-wrapper, #huckster-content-page, .subnav-wrapper, .interactions, #progress-wrapper.watched, .comment-wrapper .list .subnav .wider .hidden-xs, .seasons, #recent-wrapper, .prev a, .next a, .prev.disabled a, .next.disabled a, .comment-wrapper, #history-items, #collection-items, #rating-items, section.container.list-rows, #user-comments, #network-user-wrapper, section, .above-comment, .users-wrapper, #huckster-desktop-wrapper, .huckster-vip-info, .alert.alert-no-data, h4.character, .episode-stats.hidden-sm, .btn.btn-block.btn-summary.btn-collect, .btn.btn-block.btn-summary.btn-list, .btn.btn-block.btn-summary.btn-comment.new-comment-focus, div.titles, body.settings, #widgets-wrapper, .widget-row.alt, #network-wrapper, #bottom-stats-wrapper .col-stat, #bottom-stats-wrapper .col-stat.alt, #links-wrapper, .panel, .comment, #hu-ck-s-t-er-content-page, .comment-wrapper .count-text, .comment-wrapper .interactions a.alt, .comment-wrapper .interactions .trakt-icon-document, .comment-wrapper .interactions .trakt-icon-collection, .comment-wrapper .interactions .trakt-icon-collection-thick, #main-comment .interactions .trakt-icon-document, #main-comment .interactions .trakt-icon-collection, #progress-wrapper .row .main-info .seasons, .subnav-text, .comment-wrapper.list, body.settings #widgets-wrapper .widget-row.alt, body.authorized_applications #widgets-wrapper .widget-row.alt, body.applications #widgets-wrapper .widget-row.alt, body.widgets #widgets-wrapper .widget-row.alt, .no-touch {
-   color: white !important;
-   background-color: #222;
-}
-
-.poster, .posters, .comment, .comment-wrapper .comment, .posters .poster,  {
-   border-color: solid 1px #1d1d1d !important;
-}
-
-.alert-no-data {
-   background-color: #222 !important;
-}
-h2.section, span.trakt-icon-time-play, a.titles-link, a.ignore, a.selected, .runtime, .elapsed, .percentage, .icon.trakt-icon-alarm, .feed-icon, .icon.trakt-icon-rss, h3, span.plays, label, .icon.trakt-icon-divider, icon .trakt-icon-calendar-add, .btn-list-subscribe, .count-text, .icon.trakt-icon-move, .titles, .format-date, .unknown {
-   color: white !important;
-}
-.runtime, .elapsed, .percentage {
-   color: rgba(255, 255, 255, 0.5) !important;
-}
-#boxes-wrapper .row .stat-box .shade {
-    background: rgba(0,0,0,.9);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 0 20px;
-}
-.popup-video.one-liner.trailer {
-   background-color: red !important;
-}
-.see-more-text, h4 a, div.trakt-icon-circle-right.fa, h3 a, season.toggle, .link, p a, .name, li a:hover, #links-wrapper a:hover, .panel .control-label, .active a {
+/* ---------- Universal ---------- */
+/* Change font colour on some elements */
+.see-more-text,.posters>div h4, h4 a, a.selected, a:hover,  div.trakt-icon-circle-right.fa, h3 a, .link, p a, .name, li a:hover, #links-wrapper a:hover, .panel .control-label, .active a, .username, #text-code, #banner-code, #fanart2-code, #fanart-code, #thumb-code, #poster-code {
    color: #54C7FC !important;
 }
+.btn-primary {
+    background-color: #54C7FC!important;
+    border-color: #54C7FC!important;
+}
+/* Footer Change */
+footer {
+   background-color: #1d1d1d !important; 
+}
+/* Remove Trakt Image */
+#main-search .inner,  {
+    background: transparent url() left center no-repeat;
+}
+/* Change headers to white */
+h2.section, .activity-date, .posters>div .titles h3 {
+    color: white !important;
+}
+/* Remove shadow/blur from text */
+h1, h2, h3, .btn-dashboard {
+    text-shadow: 0 0 0px !important;
+}
+
+
+/* ---------- Dashboard ---------- */
+/* Light Grey-ish for main sections */
+ #activity-wrapper,  #schedule-wrapper,  #footer-search, #ondeck-wrapper, #main-search, #network-wrapper{
+    color: white !important;
+    background-color: #222;
+}
+/* Nav Bar */
+.navbar, #results-top-wrapper.user-wrapper, .stats-wrapper, .no-touch header#top-nav:hover, .posters .poster-under, .activity-date{
+    background-color: #1d1d1d !important;
+}
+/* Progress Bar */
 .progress-bar, .page.active {
    background-color: #54C7FC !important;
 }
 .under-progress-wrapper .progress .progress-bar.spacer {
    background-color: #193b4b !important;
 }
-#network-wrapper .posters .poster-under, .activity-date, #results-top-wrapper.user-wrapper .stats-wrapper, header#top-nav, header#top-nav:hover, #results-top-wrapper, #boxes-wrapper .row .last-comment, .bottom-shade, #boxes-wrapper .row .stats, #cover-wrapper .shadow, body.settings #links-wrapper, body.authorized_applications #links-wrapper, body.applications #links-wrapper, body.widgets #links-wrapper, .panel-heading, .instructions, .above-comment, .comment-wrapper, .comment-wrapper>.interactions, #main-comment>.interactions, .comment-wrapper.featured, .comment-wrapper .interactions, #main-comment .interactions, code, body.settings #widgets-wrapper .widget-row .code-wrapper, body.authorized_applications #widgets-wrapper .widget-row .code-wrapper, body.applications #widgets-wrapper .widget-row .code-wrapper, body.widgets #widgets-wrapper .widget-row .code-wrapper {
-   background-color: #1d1d1d !important;
-}
-.vip-expiring {
-   visibility: hidden !important;
-}
-td:hover {
-   color: #222;
-}
-.panel-heading, .panel {
-   border: solid 1px #1d1d1d !important;
-   color: white !important;
-}
-.base {
-   border: 0px !important;
-   border-color: #222;
-}
-.metadata, .quick-icons.smaller {
-   border: 0px !important;
-}
-
-.username, #text-code, #banner-code, #fanart2-code, #fanart-code, #thumb-code, #poster-code {
-   color: #54C7FC !important;
-}
-div.fanart div.titles {
-   background-color: rgba(34, 34, 34, 0.0) !important;
-}
+/* Hide Element */
 #hu-ck-s-t-er-de-sk-top-wrapper {
    display: none !important;
 }
-.btn-watch {
-   color: white !important;
-   background-color: #8e44ad !important;
+/* Adjust padding for stats a tiny bit */
+.stats-wrapper {
+    padding: 15px;
 }
-.tab.selected {
-   background: none !important;
+/* Fix Light Borders around posters */
+.posters .poster,.posters>div .quick-icons {
+    border: solid 1px #1d1d1d;
 }
-.btn-dashboard, #results-top-wrapper h1, #results-top-wrapper h2, #results-top-wrapper h3 { 
-    text-shadow: 0 0 0px !important;
+
+
+/* ---------- Profile ---------- */
+/* Light Grey-ish for main sections */
+ #charts-wrapper, #charts-minutes-total, #links-wrapper, #recent-wrapper, .pagination-top, #hu-ck-s-t-er-content-page, .subnav-wrapper, .subnav-wrapper, section, .comment-wrapper, ul.pagination a, .seasons, .form-signin, .fade.in{
+    color: white !important;
+    background-color: #222!important;
 }
-ul.pagination .disabled a:hover, .trakt-icon-arrow-left:hover {
-    background-color:transparent;
-    color:#54C7FC !important;
+/* Gets rid of horrible red background on profile */
+#cover-wrapper .shadow, .last-comment, .stat-box, .bottom-shade, #bottom-stats-wrapper .col-stat, .comment-wrapper .above-comment {
+ background-color: #1d1d1d !important;
+}
+/* Darkens LastWatched, Most Watched, AND list Boxes */
+#boxes-wrapper .row .stat-box .shade {
+    background: rgba(0,0,0,.9);
+}
+/* Change rating colour */
+.corner-rating.corner-rating-0, .corner-rating.corner-rating-1, .corner-rating.corner-rating-2, .corner-rating.corner-rating-3, .corner-rating.corner-rating-4, .corner-rating.corner-rating-5, .corner-rating.corner-rating-6, .corner-rating.corner-rating-7, .corner-rating.corner-rating-8, .corner-rating.corner-rating-9, .corner-rating.corner-rating-10 {
+ border-color: transparent #54C7FC transparent transparent;
+}
+/* Watching Status */ 
+.runtime, .elapsed, .percentage {
+   color: rgba(255, 255, 255, 0.5) !important;
+}
+
+
+/* ---------- Settings ---------- */
+/* Darkened Panel*/
+.panel-heading, h3.instructions {
+    color: white !important;
+    background-color: #1d1d1d!important;
+}
+.panel-body, div.col-xs-12,.alert-danger, .alert {
+    color: white !important;
+    border: solid 1px #222!important;
+    background-color: #222!important;
+}
+/* Fixes border issues */
+.panel, .panel-default>.panel-heading {
+    border: solid 1px #1d1d1d;
+}
+/* Remove VIP Labels - Support Trakt: https://trakt.tv/vip, this fix is to simply make it look cleaner */
+.label-vip.smaller .text, .label-vip.piller .text, .label-vip, .panel-heading a, hr {
+     visibility: hidden !important;
+}
+/* Fixes List Hover */
+td:hover {
+    color: #222;
+}
+
+/* ---------- Payment Page ---------- */
+#watching-wrapper.kale-header>.container>.row, .kale-thanks-header>.container>.row, #watching-wrapper.kale-header .shade, .kale-thanks-header .shade, .payment-options, .payment-option.credit, .payment-option.paypal, .payment-option.paypal.selected, .payment-option.credit.selected, .payment-option:hover, section#standard-features {
+    color: white !important;
+    background-color: #222!important;
+}
+#watching-wrapper.kale-header .kale-details .plan-options-text-wrapper .plan-options-text, .kale-thanks-header .kale-details .plan-options-text-wrapper .plan-options-text, #watching-wrapper.kale-header .kale-details .plan-options .plan-option .monthly, .kale-thanks-header .kale-details .plan-options .plan-option .monthly, #watching-wrapper.kale-header .kale-details .plan-options .plan-option, .kale-thanks-header .kale-details .plan-options .plan-option, #vip-features, #standard-features, #vip-features-wrapper .inner{
+    color: white !important;
+    background-color: #1d1d1d!important;
+}
+
+/* ---------- Apps Page ---------- */
+body.main.home #watching-wrapper .shade, body.main.index #watching-wrapper .shade, body.apps #watching-wrapper .shade, body.welcome #watching-wrapper .shade, body.branding #watching-wrapper .shade, body.apps #apps-icon-wrapper {
+    color: white !important;
+    background-color: #222!important;
 }
 }
 @-moz-document url-prefix("http://trakt.tv") {
