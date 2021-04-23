@@ -24,7 +24,7 @@
     <h2 align="left">List of True-Dark Scripts</h2>
     <ol align="left">
             <ul>
-                <li><a href="https://raw.githubusercontent.com/wadforth/True-Dark/main/Trakt.tv/true-trakt.user.css">Trakt.tv</a></li>
+                <li><a href="https://raw.githubusercontent.com/wadforth/True-Dark/main/Trakt.tv/true-trakt.user.css">Trakt.tv</a> - Dark Dashboard, Dark Calender, Dark Profile, Dark Settings and removed VIP alerts </li>
               <li><b>More coming soon...</b></li>
             </ul>
     </ol>
