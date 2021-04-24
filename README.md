@@ -41,7 +41,7 @@
     </ul>
     <h3>Social Media</h3>
             <ul>
-                <li><b>Instagram</b> - <i>Coming Soon...</i></li>
+                <li><a href="https://raw.githubusercontent.com/wadforth/True-Dark/main/instagram.com/true-instagram.user.css">Instagram</a> - Home, Profile, Settings, Posts, Mini-Profiles and Explore Darkened; Fixes included and t&C popups removed. </li>
                 <li><b>Reddit</b> - <i>Coming Soon...</i></li>
     </ul>
     </ol>
