@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Dark-Trakt.tv
-@version        2.0.1
+@version        2.0.2
 @namespace      https://github.com/wadforth/
 @description    True dark theme for Trakt.tv
 @author         Kieran
@@ -37,12 +37,12 @@ h1, h2, h3, .btn-dashboard {
 
 /* ---------- Dashboard ---------- */
 /* Light Grey-ish for main sections */
- #activity-wrapper,  #schedule-wrapper,  #footer-search, #ondeck-wrapper, #main-search, #network-wrapper{
+ #activity-wrapper,  #schedule-wrapper,  #footer-search, #ondeck-wrapper, #main-search, #network-wrapper {
     color: white !important;
     background-color: #222;
 }
 /* Nav Bar */
-.navbar, #results-top-wrapper.user-wrapper, .stats-wrapper, .no-touch header#top-nav:hover, .posters .poster-under, .activity-date{
+.navbar, #results-top-wrapper.user-wrapper, .stats-wrapper, .no-touch header#top-nav:hover, .posters .poster-under, .activity-date, #auth-form-wrapper .bottom-wrapper, .checkin-modal .bottom-wrapper{
     background-color: #1d1d1d !important;
 }
 /* Progress Bar */
@@ -68,12 +68,20 @@ h1, h2, h3, .btn-dashboard {
 
 /* ---------- Profile ---------- */
 /* Light Grey-ish for main sections */
- #charts-wrapper, #charts-minutes-total, #links-wrapper, #recent-wrapper, .pagination-top, #hu-ck-s-t-er-content-page, .subnav-wrapper, .subnav-wrapper, section, .comment-wrapper, ul.pagination a, .seasons, .form-signin, .fade.in{
+ #charts-wrapper, #charts-minutes-total, #links-wrapper, #recent-wrapper, .pagination-top, #hu-ck-s-t-er-content-page, .subnav-wrapper, .subnav-wrapper, section, .comment-wrapper, ul.pagination a, .seasons, .form-signin, .fade.in {
     color: white !important;
     background-color: #222!important;
 }
+/* Fix for Profile Tabs interactions */
+.comment-wrapper {
+    border: solid 1px #1d1d1d;
+}
+div.comment-wrapper.list.subnav.wider.hidden-xs, div.interactions {
+    background-color: #222!important;
+    border: 0px;
+}
 /* Gets rid of horrible red background on profile */
-#cover-wrapper .shadow, .last-comment, .stat-box, .bottom-shade, #bottom-stats-wrapper .col-stat, .comment-wrapper .above-comment {
+#cover-wrapper .shadow, .last-comment, .stat-box, .bottom-shade, #bottom-stats-wrapper .col-stat, .above-comment, .comment-wrapper .above-comment {
  background-color: #1d1d1d !important;
 }
 /* Darkens LastWatched, Most Watched, AND list Boxes */
@@ -89,14 +97,29 @@ h1, h2, h3, .btn-dashboard {
    color: rgba(255, 255, 255, 0.5) !important;
 }
 
-
+/* Show/Movie Fixes */
+.summary-activity .tabs .tab.selected, .summary-activity .tabs .tab:not(:first-child), .summary-activity .tab-content .tab-pane .users-wrapper, #info-wrapper .info .action-buttons>.btn {
+     background-color: #222 !important;
+     color:white;
+     border: solid 1px #1d1d1d;
+}
+.comment-wrapper.list {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.comment-wrapper.list .above-comment .user-avatar img {
+    margin-left:10px;
+}
+.comment-wrapper.list .above-comment .interactions {
+    display: none !important;
+}
 /* ---------- Settings ---------- */
 /* Darkened Panel*/
 .panel-heading, h3.instructions {
     color: white !important;
     background-color: #1d1d1d!important;
 }
-.panel-body, div.col-xs-12,.alert-danger, .alert {
+.panel-body, .alert-danger, .alert {
     color: white !important;
     border: solid 1px #222!important;
     background-color: #222!important;
@@ -123,11 +146,39 @@ td:hover {
     color: white !important;
     background-color: #1d1d1d!important;
 }
+#standard-features {
+    background: -webkit-radial-gradient(center,circle cover,#222 0%,#222 100%);;
+}
 
 /* ---------- Apps Page ---------- */
 body.main.home #watching-wrapper .shade, body.main.index #watching-wrapper .shade, body.apps #watching-wrapper .shade, body.welcome #watching-wrapper .shade, body.branding #watching-wrapper .shade, body.apps #apps-icon-wrapper {
     color: white !important;
     background-color: #222!important;
+}
+
+/* About Page */
+#faq-wrapper .faq-item, .faq-item h3 {
+    background-color: #1d1d1d;
+    color: white!important;
+}
+
+/* Activate Page */
+#auth-form-wrapper input, #auth-form-wrapper, .checkin-modal {
+    background-color: #1d1d1d;
+    color: white;
+}
+
+/* Branding Page */
+body.branding #logo-downloads-wrapper, body.branding #api-wrapper, .hero-wrapper .container .row .info-wrapper {
+    background: -moz-radial-gradient(center,circle cover,#222 0%,#222 100%);
+    background: -webkit-gradient(radial,center center,0px,center center,100%,color-stop(0%,#222),color-stop(100%,#222));
+    background: -webkit-radial-gradient(center,circle cover,#222 0%,#222 100%);
+    background: -o-radial-gradient(center,circle cover,#222 0%,#222 100%);
+    background: -ms-radial-gradient(center,circle cover,#222 0%,#222 100%);
+    background: radial-gradient(center,circle cover,#222 0%,#222 100%);
+}
+body.main.home .hero-wrapper .full-screenshot, body.main.index .hero-wrapper .full-screenshot, body.apps .hero-wrapper .full-screenshot, body.welcome .hero-wrapper .full-screenshot, body.branding .hero-wrapper .full-screenshot {
+    display: none !important;
 }
 }
 @-moz-document url-prefix("http://trakt.tv") {
