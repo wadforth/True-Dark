@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Dark-Trakt.tv
-@version        2.0.2
+@version        2.0.3
 @namespace      https://github.com/wadforth/
 @description    True dark theme for Trakt.tv
 @author         Kieran
@@ -10,10 +10,10 @@
 @-moz-document domain("trakt.tv") {
 /* ---------- Universal ---------- */
 /* Change font colour on some elements */
-.see-more-text,.posters>div h4, h4 a, a.selected, a:hover,  div.trakt-icon-circle-right.fa, h3 a, .link, p a, .name, li a:hover, #links-wrapper a:hover, .panel .control-label, .active a, .username, #text-code, #banner-code, #fanart2-code, #fanart-code, #thumb-code, #poster-code {
+.see-more-text,.posters>div h4, h4 a, a.selected, a:hover,  div.trakt-icon-circle-right.fa, h3 a, .link, p a, .name, li a:hover, #links-wrapper a:hover, .panel .control-label, .active a, .username, #text-code, #banner-code, #fanart2-code, #fanart-code, #thumb-code, #poster-code, #info-wrapper .sidebar .vip-actions .under-action, #info-wrapper .sidebar .mod-actions .under-action, #info-wrapper .sidebar .vip-actions li a .fa, #info-wrapper .sidebar .mod-actions li a .fa, #comments .active h3, #replies .active h3 {
    color: #54C7FC !important;
 }
-.btn-primary {
+.btn-primary, #cover-wrapper #avatar-wrapper .buttons .btn-follow {
     background-color: #54C7FC!important;
     border-color: #54C7FC!important;
 }
@@ -33,7 +33,30 @@ h2.section, .activity-date, .posters>div .titles h3 {
 h1, h2, h3, .btn-dashboard {
     text-shadow: 0 0 0px !important;
 }
-
+/* Adjust Colours */
+header#top-nav img:not(.avatar), div.fa.fa-heart, div.trakt-icon-collection-thick, div.trakt-icon-collection-thick {
+     filter: invert(1);
+}
+div.action.watch  {
+filter: hue-rotate(var(--value, 270deg))
+}
+#chart-genres, #chart-genres-legend ul li>span, canvas#chart-ratings, .corner-rating, .hero-wrapper.vip h1 .trakt-icon-trakt, #auth-form-wrapper .logo-wrapper .logo, .checkin-modal .logo-wrapper .logo, .trakt-full img {
+    filter: hue-rotate(var(--value, 200deg))
+}
+/* People Watching H4 */
+.fanarts .fanart h4 {
+    background-color:#54C7FC;
+}
+/* Buttons */
+#info-wrapper .sidebar .external li a {
+    background-color: #222!important;
+    border: solid 1px #1d1d1d!important;
+    color:white;
+}
+/* Discover */
+body.discover .popular-items-wrapper .ranks .rank-item.selected .rank, body.discover .popular-items-wrapper .ranks .rank-item.selected:hover .rank {
+    background-color:#54C7FC;
+}
 
 /* ---------- Dashboard ---------- */
 /* Light Grey-ish for main sections */
@@ -88,10 +111,7 @@ div.comment-wrapper.list.subnav.wider.hidden-xs, div.interactions {
 #boxes-wrapper .row .stat-box .shade {
     background: rgba(0,0,0,.9);
 }
-/* Change rating colour */
-.corner-rating.corner-rating-0, .corner-rating.corner-rating-1, .corner-rating.corner-rating-2, .corner-rating.corner-rating-3, .corner-rating.corner-rating-4, .corner-rating.corner-rating-5, .corner-rating.corner-rating-6, .corner-rating.corner-rating-7, .corner-rating.corner-rating-8, .corner-rating.corner-rating-9, .corner-rating.corner-rating-10 {
- border-color: transparent #54C7FC transparent transparent;
-}
+
 /* Watching Status */ 
 .runtime, .elapsed, .percentage {
    color: rgba(255, 255, 255, 0.5) !important;
@@ -119,7 +139,7 @@ div.comment-wrapper.list.subnav.wider.hidden-xs, div.interactions {
     color: white !important;
     background-color: #1d1d1d!important;
 }
-.panel-body, .alert-danger, .alert {
+.panel-body, .alert-danger, .alert, #auth-form-wrapper .auth-services-wrapper, .checkin-modal .auth-services-wrapper {
     color: white !important;
     border: solid 1px #222!important;
     background-color: #222!important;
@@ -166,6 +186,10 @@ body.main.home #watching-wrapper .shade, body.main.index #watching-wrapper .shad
 #auth-form-wrapper input, #auth-form-wrapper, .checkin-modal {
     background-color: #1d1d1d;
     color: white;
+}
+#auth-bg-wrapper.bg-on {
+    filter: grayscale(400%);
+    filter: opacity(20%);
 }
 
 /* Branding Page */
