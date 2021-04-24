@@ -20,9 +20,29 @@
     <hr>
     <h2 align="left">List of True-Dark Scripts</h2>
     <ol align="left">
+    <hr>
+    <h3 align="left">Entertainment</h3>
             <ul>
                 <li><a href="https://raw.githubusercontent.com/wadforth/True-Dark/main/Trakt.tv/true-trakt.user.css">Trakt.tv</a> - Dashboard, Profile, Settings, Comments, Lists, Payments and Apps Darkened; Fixes included and VIP labels removed. </li>
-              <li><b>More coming soon...</b></li>
-            </ul>
+    </ul>
+    <h3>Games</h3>
+            <ul>
+                <li><b>Origin</b> - <i>Coming Soon...</i></li>
+                <li><b>Steam</b> - <i>Coming Soon...</i></li>
+                <li><b>UPlay</b> - <i>Coming Soon...</i></li>
+                <li><b>GOG</b> - <i>Coming Soon...</i></li>
+    </ul>
+    <h3>Shopping / Payment</h3>
+            <ul>
+                <li><b>PayPal</b> - <i>Coming Soon...</i></li>
+                <li><b>eBay</b> - <i>Coming Soon...</i></li>
+                <li><b>Amazon</b> - <i>Coming Soon...</i></li>
+                <li><b>Starling Bank</b> - <i>Coming Soon...</i></li>
+    </ul>
+    <h3>Social Media</h3>
+            <ul>
+                <li><b>Instagram</b> - <i>Coming Soon...</i></li>
+                <li><b>Reddit</b> - <i>Coming Soon...</i></li>
+    </ul>
     </ol>
 </p>
