@@ -45,4 +45,5 @@
                 <li><b>Reddit</b> - <i>Coming Soon...</i></li>
     </ul>
     </ol>
+     <h3 align="center"><b>Disclaimer:</b> All themes created whilst uBlock is enabled, any Ads that may show may break the theme; if they do, raise an issue with website and ad location and i'll get it sorted.</h3>
 </p>
