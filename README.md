@@ -23,7 +23,7 @@
     <hr>
     <h3 align="left">Entertainment</h3>
             <ul>
-                <li><a href="https://raw.githubusercontent.com/wadforth/True-Dark/blob/main/Trakt.tv/true-trakt.user.css">Trakt.tv</a> - Dashboard, Profile, Settings, Comments, Lists, Payments and Apps Darkened; Fixes included and VIP labels removed. </li>
+                <li><a href="https://raw.githubusercontent.com/wadforth/True-Dark/main/Trakt.tv/true-trakt.user.css">Trakt.tv</a> - Dashboard, Profile, Settings, Comments, Lists, Payments and Apps Darkened; Fixes included and VIP labels removed. </li>
     </ul>
     <h3>Games</h3>
             <ul>
@@ -41,7 +41,7 @@
     </ul>
     <h3>Social Media</h3>
             <ul>
-                <li><a href="https://raw.githubusercontent.com/wadforth/True-Dark/blob/main/instagram.com/true-instagram.user.css">Instagram</a> - Home, Profile, Settings, Posts, Mini-Profiles and Explore Darkened; Fixes included and t&C popups removed. </li>
+                <li><a href="https://raw.githubusercontent.com/wadforth/True-Dark/main/instagram.com/true-instagram.user.css">Instagram</a> - Home, Profile, Settings, Posts, Mini-Profiles and Explore Darkened; Fixes included and t&C popups removed. </li>
                 <li><b>Reddit</b> - <i>Coming Soon...</i></li>
     </ul>
     </ol>
