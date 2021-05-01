@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Dark-Trakt.tv
-@version        2.1.0
+@version        3.0.0-final
 @namespace      https://github.com/wadforth/
 @description    True dark theme for Trakt.tv
 @author         Kieran
@@ -118,6 +118,9 @@ div.comment-wrapper.list.subnav.wider.hidden-xs, div.interactions {
 /* Gets rid of horrible red background on profile */
 #cover-wrapper .shadow, .last-comment, .stat-box, .bottom-shade, #bottom-stats-wrapper .col-stat, .above-comment, .comment-wrapper .above-comment {
  background-color: #1d1d1d !important;
+}
+#cover-wrapper .full-bg {
+    display: none!important;
 }
 /* Darkens LastWatched, Most Watched, AND list Boxes */
 #boxes-wrapper .row .stat-box .shade {
