@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Dark-Trakt.tv
-@version        3.0.0-final
+@version        3.0.1-final
 @namespace      https://github.com/wadforth/
 @description    True dark theme for Trakt.tv
 @author         Kieran
@@ -8,224 +8,178 @@
 @license        CC-BY-SA-4.0
 ==/UserStyle== */
 @-moz-document domain("trakt.tv") {
-/* ---------- Universal ---------- */
-/* Change font colour on some elements */
-.see-more-text,.posters>div h4, h4 a, a.selected, a:hover,  div.trakt-icon-circle-right.fa, h3 a, .link, p a, .name, li a:hover, #links-wrapper a:hover, .panel .control-label, .active a, .username, #text-code, #banner-code, #fanart2-code, #fanart-code, #thumb-code, #poster-code, #info-wrapper .sidebar .vip-actions .under-action, #info-wrapper .sidebar .mod-actions .under-action, #info-wrapper .sidebar .vip-actions li a .fa, #info-wrapper .sidebar .mod-actions li a .fa, #comments .active h3, #replies .active h3, #info-wrapper ul.additional-stats li a, .vip-actions a, #actors .active h3, #credits .active h3, .custom-list .list-info .info h3, #info-wrapper .info [data-readmore-toggle], .posters a, .frame-wrapper .sidenav h1 .next a, .filter-dropdown.selected .icon, .filter-dropdown.selected .caret, .filter-dropdown .selected .icon, .filter-dropdown .selected .caret, body.calendars .date-separator, .frame-wrapper #date-nav.bottom a, #vip-features, #standard-features a, .features a {
-   color: #54C7FC !important;
+* {
+    color: white;
 }
-.btn-primary, #cover-wrapper #avatar-wrapper .buttons .btn-follow, #actors .active h3 .count, #credits .active h3 .count {
+
+section,
+.poster-under,
+footer,
+.dropdown-toggle,
+.dropdown-menu,
+.shadow,
+.last-comment,
+.bottom-shade,
+.popover-title,
+.pagination-quick-jump,
+.wider,
+.seasons,
+html,
+.list,
+.instructions,
+#auth-form-wrapper,
+.auth-services-wrapper,
+.bottom-wrapper,
+#auth-form-wrapper button,
+.payment-options {
+    background-color: #222!important;
+}
+
+.titles-link,
+.premiere,
+h4 a,
+.username,
+a:hover,
+.dropdown-menu a:hover,
+.selected,
+ul.pagination a:hover,
+.pagination-quick-jump:hover,
+.show-title a,
+.link,
+.fa-plus,
+.user-name h3,
+.panel a,
+.active a,
+.side-link,
+.bottom-wrapper a,
+.text a {
+    color: #54C7FC!important;
+}
+
+.footer-search,
+.open,
+.popover {
+    color: black!important;
+}
+
+.corner-rating,
+canvas,
+#chart-genres-legend {
+    filter:hue-rotate(var(--value, 200deg));
+}
+
+.progress-bar,
+.fanart h4,
+.selected .trakt-icon-check-thick,
+.selected .trakt-icon-collection-thick,
+.selected .trakt-icon-list-thick,
+.selected .trakt-icon-bolt-thick,
+.selected .trakt-icon-play1-thick .selected .trakt-icon-play2-thick,
+.action,
+.btn-primary,
+input::selection,
+textarea::selection {
     background-color: #54C7FC!important;
-    border-color: #54C7FC!important;
-}
-/* Footer Change */
-footer {
-   background-color: #1d1d1d !important; 
-}
-/* Remove Trakt Image */
-#main-search .inner,  {
-    background: transparent url() left center no-repeat;
-}
-/* Change headers to white */
-h2.section, .activity-date, .posters>div .titles h3 {
-    color: white !important;
-}
-/* Remove shadow/blur from text */
-h1, h2, h3, .btn-dashboard {
-    text-shadow: 0 0 0px !important;
-}
-/* Adjust Colours */
-header#top-nav img:not(.avatar), div.fa.fa-heart, div.trakt-icon-collection-thick, div.trakt-icon-collection-thick {
-     filter: invert(1);
-}
-div.action.watch  {
-filter: hue-rotate(var(--value, 270deg))
-}
-#chart-genres, #chart-genres-legend ul li>span, canvas#chart-ratings, .corner-rating, .hero-wrapper.vip h1 .trakt-icon-trakt, #auth-form-wrapper .logo-wrapper .logo, .checkin-modal .logo-wrapper .logo, .trakt-full img, .rating-hearts:not(:checked)>label, #watching-wrapper.kale-header h1 .trakt-icon-trakt, .kale-thanks-header h1 .trakt-icon-trakt {
-    filter: hue-rotate(var(--value, 200deg))
-}
-/* People Watching H4 */
-.fanarts .fanart h4 {
-    background-color:#54C7FC;
-}
-/* Buttons */
-#info-wrapper .sidebar .external li a, .open>.dropdown-menu {
-    background-color: #222!important;
-    border: solid 1px #1d1d1d!important;
-    color:white;
-}
-/* Discover */
-body.discover .popular-items-wrapper .ranks .rank-item.selected .rank, body.discover .popular-items-wrapper .ranks .rank-item.selected:hover .rank {
-    background-color:#54C7FC;
-}
-/* White Glow Fix */
-.custom-list .list-info .info .overview[data-readmore][aria-expanded=false] .shade, .comment-wrapper.featured .comment-text[data-readmore][aria-expanded=false] .shade, .subnav-text .text[data-readmore][aria-expanded=false] .shade {
-    background-image: -webkit-linear-gradient(top,rgba(255,255,255,0) 0%,#222 100%)
-}
-#summary-ratings-wrapper ul li .icon {
-    text-shadow: 0 0 0px;
 }
 
-/* VIP Banner removal */
-.hu-ck-s-t-er-v-i-p-square .inner, .hu-ck-s-t-er-v-i-p-banner .inner, .hu-ck-s-t-er-v-i-p-poster .inner, body.apps #plex-scrobblers-wrapper .shade-left, #watching-wrapper .shadow-from-right, .watching-wrapper .shadow-from-right, .hero-wrapper .shadow-from-right, body.main.home #watchnow-wrapper .shade, body.main.home #api-wrapper .shade, body.main.home #apps-wrapper .shade, body.main.index #watchnow-wrapper .shade, body.main.index #api-wrapper .shade, body.main.index #apps-wrapper .shade, body.apps #watchnow-wrapper .shade, body.apps #api-wrapper .shade, body.apps #apps-wrapper .shade, body.welcome #watchnow-wrapper .shade, body.welcome #api-wrapper .shade, body.welcome #apps-wrapper .shade, body.branding #watchnow-wrapper .shade, body.branding #api-wrapper .shade, body.branding #apps-wrapper .shade {
-    display:none!important;
+.progress-bar.spacer,
+.trakt-icon-check-thick:hover,
+.trakt-icon-collection-thick:hover,
+.trakt-icon-list-thick:hover,
+.trakt-icon-bolt-thick:hover,
+.trakt-icon-play1-thick:hover,
+.trakt-icon-play2-thick:hover,
+.btn-primary:hover {
+    background-color: #193b4b!important;
 }
 
-/* ---------- Dashboard ---------- */
-/* Light Grey-ish for main sections */
- #activity-wrapper,  #schedule-wrapper,  #footer-search, #ondeck-wrapper, #main-search, #network-wrapper {
-    color: white !important;
-    background-color: #222;
-}
-/* Nav Bar */
-.navbar, #results-top-wrapper.user-wrapper, .stats-wrapper, .no-touch header#top-nav:hover, .posters .poster-under, .activity-date, #auth-form-wrapper .bottom-wrapper, .checkin-modal .bottom-wrapper{
-    background-color: #1d1d1d !important;
-}
-/* Progress Bar */
-.progress-bar, .page.active {
-   background-color: #54C7FC !important;
-}
-.under-progress-wrapper .progress .progress-bar.spacer {
-   background-color: #193b4b !important;
-}
-/* Hide Element */
-#hu-ck-s-t-er-de-sk-top-wrapper {
-   display: none !important;
-}
-/* Adjust padding for stats a tiny bit */
-.stats-wrapper {
-    padding: 15px;
-}
-/* Fix Light Borders around posters */
-.posters .poster,.posters>div .quick-icons {
-    border: solid 1px #1d1d1d;
-}
-
-
-/* ---------- Profile ---------- */
-/* Light Grey-ish for main sections */
- #charts-wrapper, #charts-minutes-total, #links-wrapper, #recent-wrapper, .pagination-top, #hu-ck-s-t-er-content-page, .subnav-wrapper, .subnav-wrapper, section, .comment-wrapper, ul.pagination a, .seasons, .form-signin {
-    color: white !important;
-    background-color: #222!important;
-}
-/* Fix for Profile Tabs interactions */
-.comment-wrapper {
-    border: solid 1px #1d1d1d;
-}
-div.comment-wrapper.list.subnav.wider.hidden-xs, div.interactions {
-    background-color: #222!important;
-    border: 0px;
-}
-/* Gets rid of horrible red background on profile */
-#cover-wrapper .shadow, .last-comment, .stat-box, .bottom-shade, #bottom-stats-wrapper .col-stat, .above-comment, .comment-wrapper .above-comment {
- background-color: #1d1d1d !important;
-}
-#cover-wrapper .full-bg {
-    display: none!important;
-}
-/* Darkens LastWatched, Most Watched, AND list Boxes */
-#boxes-wrapper .row .stat-box .shade {
-    background: rgba(0,0,0,.9);
-}
-
-/* Watching Status */ 
-.runtime, .elapsed, .percentage {
-   color: rgba(255, 255, 255, 0.5) !important;
-}
-    #watching-now-wrapper {
-    background-color: rgba(0,100,255,1)!important;
-}
-
-/* Show/Movie Fixes */
-.summary-activity .tabs .tab.selected, .summary-activity .tabs .tab:not(:first-child), .summary-activity .tab-content .tab-pane .users-wrapper, #info-wrapper .info .action-buttons>.btn {
-     background-color: #222 !important;
-     color:white;
-     border: solid 1px #1d1d1d;
-}
-.comment-wrapper.list {
-    margin-left: 0px;
-    padding-left: 0px;
-}
-.comment-wrapper.list .above-comment .user-avatar img {
-    margin-left:10px;
-}
-.comment-wrapper.list .above-comment .interactions {
-    display: none !important;
-}
-/* ---------- Settings ---------- */
-/* Darkened Panel*/
-.panel-heading, h3.instructions {
-    color: white !important;
+.activity-date,
+header,
+.no-touch header#top-nav:hover,
+.stats-wrapper,
+.dropdown-menu a:hover,
+.stats,
+#links-wrapper,
+#main-search .inner,
+ul.pagination a,
+.popover,
+.panel-body,
+.panel-heading,
+select,
+.form-control {
     background-color: #1d1d1d!important;
 }
-.panel-body, .alert-danger, .alert, #auth-form-wrapper .auth-services-wrapper, .checkin-modal .auth-services-wrapper {
-    color: white !important;
-    border: solid 1px #222!important;
-    background-color: #222!important;
-}
-/* Fixes border issues */
-.panel, .panel-default>.panel-heading {
-    border: solid 1px #1d1d1d;
-}
-/* Remove VIP Labels - Support Trakt: https://trakt.tv/vip, this fix is to simply make it look cleaner */
-.label-vip.smaller .text, .label-vip.piller .text, .label-vip, .panel-heading a, hr {
-     visibility: hidden !important;
-}
-/* Fixes List Hover */
-td:hover {
-    color: #222;
+
+.poster-under,
+.posters .poster,
+.quick-icons {
+    border: 1px solid #1d1d1d!important;
 }
 
-/* ---------- Payment Page ---------- */
-#watching-wrapper.kale-header>.container>.row, .kale-thanks-header>.container>.row, #watching-wrapper.kale-header .shade, .kale-thanks-header .shade, .payment-options, .payment-option.credit, .payment-option.paypal, .payment-option.paypal.selected, .payment-option.credit.selected, .payment-option:hover, section#standard-features {
-    color: white !important;
-    background-color: #222!important;
-}
-#watching-wrapper.kale-header .kale-details .plan-options-text-wrapper .plan-options-text, .kale-thanks-header .kale-details .plan-options-text-wrapper .plan-options-text, #watching-wrapper.kale-header .kale-details .plan-options .plan-option .monthly, .kale-thanks-header .kale-details .plan-options .plan-option .monthly, #watching-wrapper.kale-header .kale-details .plan-options .plan-option, .kale-thanks-header .kale-details .plan-options .plan-option, #vip-features, #standard-features, #vip-features-wrapper .inner{
-    color: white !important;
-    background-color: #1d1d1d!important;
-}
-#standard-features, section#apps-icon-wrapper.hero-wrapper.light {
-    background: -webkit-radial-gradient(center,circle cover,#222 0%,#222 100%);;
+header#top-nav img,
+.fa-heart,
+.label-vip,
+.trakt-full img,
+.light .enabled,
+.logo,
+.icon,
+.text .trakt-icon-trakt,
+.fanarts .fanart.logo img.real,
+.fanarts .fanart h4.premiere,
+.has-worded-image h4,
+.bottom a,
+#apps-icon-wrapper,
+.balance-text,
+.active.tab-pane,
+.in-wrapper .btn-primary,
+.row i.trakt-icon-trakt,
+.payment-option,
+.plan-option.selected,
+.plan-option,
+#standard-features {
+    filter:invert(1);
 }
 
-/* ---------- Apps Page ---------- */
-body.main.home #watching-wrapper .shade, body.main.index #watching-wrapper .shade, body.apps #watching-wrapper .shade, body.welcome #watching-wrapper .shade, body.branding #watching-wrapper .shade, body.apps #apps-icon-wrapper {
-    color: white !important;
-    background-color: #222!important;
+.avatar,
+.titles .fa-heart,
+#auth-form-wrapper .auth-services .icon,
+.active.tab-pane,
+.cc {
+    filter:invert(0)!important;
 }
-/* Grey Block Fix */
-#plex-scrobbler {
-    background-image: linear-gradient(to right,rgba(0,0,0,0.75) 0px,rgba(0,0,0,0) 60%)!important;
-    
+.plan-option.selected {}
+.in-wrapper .btn-primary {}
+#main-search .inner {
+    background: transparent url("") left center no-repeat;
 }
 
-/* About Page */
-#faq-wrapper .faq-item, .faq-item h3 {
-    background-color: #1d1d1d;
+footer a,
+.dropdown-menu a,
+ul.pagination a,
+.popover-title,
+.dropdown-toggle,
+.trakt-icon-divider,
+.trakt-icon-wand,
+.btn-list-update,
+.btn-list-subscribe,
+.btn-list-progress,
+.panel-heading,
+select,
+.form-control,
+.fanarts .fanart h4.premiere,
+.payment-options,
+.payment-options-checkout a,
+#standard-features {
     color: white!important;
 }
 
-/* Activate Page */
-#auth-form-wrapper input, #auth-form-wrapper, .checkin-modal {
-    background-color: #1d1d1d;
-    color: white;
-}
-#auth-bg-wrapper.bg-on {
-    filter: grayscale(400%);
-    filter: opacity(20%);
-}
-
-/* Branding Page */
-body.branding #logo-downloads-wrapper, body.branding #api-wrapper, .hero-wrapper .container .row .info-wrapper {
-    background: -moz-radial-gradient(center,circle cover,#222 0%,#222 100%);
-    background: -webkit-gradient(radial,center center,0px,center center,100%,color-stop(0%,#222),color-stop(100%,#222));
-    background: -webkit-radial-gradient(center,circle cover,#222 0%,#222 100%);
-    background: -o-radial-gradient(center,circle cover,#222 0%,#222 100%);
-    background: -ms-radial-gradient(center,circle cover,#222 0%,#222 100%);
-    background: radial-gradient(center,circle cover,#222 0%,#222 100%);
-}
-body.main.home .hero-wrapper .full-screenshot, body.main.index .hero-wrapper .full-screenshot, body.apps .hero-wrapper .full-screenshot, body.welcome .hero-wrapper .full-screenshot, body.branding .hero-wrapper .full-screenshot {
-    display: none !important;
+#boxes-wrapper .shade,
+#watchnow-wrapper .shade,
+#api-wrapper .shade,
+.bg-on,
+.hu-ck-s-t-er-v-i-p-square .inner,
+#vip-features-wrapper .inner {
+    background: rgba(0,0,0,.9)!important;
 }
 }
 @-moz-document url-prefix("http://trakt.tv") {
