@@ -8,49 +8,20 @@
 @license        CC-BY-SA-4.0
 ==/UserStyle== */
 @-moz-document domain("instagram.com") {
-/* ---------- Home ---------- */
-/* Main Body */
-.o64aR, ._3Laht {
-    background-color: #222!important;
-}
-/* Insta Stories */
-.VideM {
-    background-color:#222!important;
-    border-color:#1d1d1d!important;
-}
-/* Insta Story Text */
-.eebAO, a.sqdOP.yWX7d._8A5w5.ZIAjV, a.zV_Nj, a.FPmhX.notranslate.Qj3-a, a.gmFkV, .-nal3, .-nal3:active, .-nal3:visited, .-nal3:hover, .g47SY, .rhpdm, a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video, ._8A5w5, a._8A5w5, a._8A5w5:visited {
+* {
     color: white!important;
 }
-/* Right Panel */
-.MnWb5{
-    border: solid 1px #1d1d1d;
-    margin-left: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top:-3px;
-}
-._8UZ6e,.HVWg4, a.FPmhX.MBL3Z, .KV-D4 {
+
+main, .f7Bj3 > div, .JLbVX, .La5L3, a .HVWg4, .-qQT3, .WaOAr, .m82CD, .TGYkm, .JvDyy, ._3wFWr, ._3wFWr .HVWg4, .HcJZg,.oYYFH, .nGS-Y, .-sxBV   {
     background-color: #222!important;
-    color:white!important;
-}
-/* Nav Bar */
-.Hz2lF, .nfCOa, ._lz6s, div.tUEmP, a.FPmhX.notranslate.MBL3Z {
-    background-color: #1d1d1d!important;
-}
-/* Change Logo Colour */
-.s4Iyt, ._47KiJ, .ZcHy5, button.wpO6b, .mLCHD button, .vBF20 button {
-    filter: invert(1);
-}
-/* Post Header */
-.Ppjfr, .X7cDz,div.eo2As,  div.DCpAF, div._1ssW0, div.DCpAF, div._8Rm4L.vboSt._6E_wP.ccgHY.GZkEI, div.Igw0E.rBNOH.eGOV_._4EzTm.L-sTb.HcJZg, .L_LMM.ePUX4 .Slqrh, div.rQDP3, .HoLwm, .mt3GC:only-child .aOOlW:first-child, .-Cab_, ._43CKF, .c7DD5, .Z2m7o, div.lKHVe.rBNOH.eGOV_.ybXk5.vwCYk.XfCBB.g6RW6, div.Igw0E.IwRSH.eGOV_._4EzTm.XfCBB.g6RW6, div.Dw_ki, .oYYFH, .AjEzM, .S-mcP, .N9abW, .-qQT3, .nGS-Y, .l4b0S, ._7UhW9 ._7UhW9, .se6yk, .fDxYl, .HVWg4, .frMpI.-sxBV, ._4EzTm, ._9BIwZ, ._9XapR, .JLbVX, .h-aRd, .h-aRd:visited, .h-aRd:hover, .h-aRd:active, .wW1cu, .vwCYk, .ada5V, .PVkFi, .zyHYP, .p7vTm, .ZL6TI, .Mbxk3, .PJ4k2, .GBPOY{
-    background-color: #1d1d1d!important;
-    border: solid 1px #1d1d1d!important;
-    color:white!important;
 }
 
-._1ssW0 {
-    display: none!important;
+._lz6s, .rOtsg,.PS7Gk,.fuQUr:hover, .leaflet-popup-content-wrapper , .XfvCs, .IwRSH.vwCYk, .PVkFi,  .N9abW, ._8UZ6e, .IwRSH.HVWg4,.S-mcP, .GZkEI,  .zGtbP, input, .c7DD5, .Di7vw, .CcYR1, .aOOlW, .Slqrh, .eo2As   {
+    background-color: #1d1d1d!important
+}
+
+.s4Iyt,._8-yf5  {
+    filter: invert(1);
 }
 }
 @-moz-document url-prefix("http://instagram.com") {
