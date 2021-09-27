@@ -29,7 +29,6 @@ html,
 .instructions,
 #auth-form-wrapper,
 .auth-services-wrapper,
-.bottom-wrapper,
 #auth-form-wrapper button,
 .payment-options {
     background-color: #222!important;
@@ -52,7 +51,12 @@ ul.pagination a:hover,
 .active a,
 .side-link,
 .bottom-wrapper a,
-.text a {
+.text a,
+#actors .tab-links h3,
+.info > a,
+.vip-actions a,
+#info-wrapper .sidebar .vip-actions li a .fa,
+#info-wrapper ul.additional-stats li a {
     color: #54C7FC!important;
 }
 
@@ -78,7 +82,8 @@ canvas,
 .action,
 .btn-primary,
 input::selection,
-textarea::selection {
+textarea::selection,
+.btn-block {
     background-color: #54C7FC!important;
 }
 
@@ -89,7 +94,8 @@ textarea::selection {
 .trakt-icon-bolt-thick:hover,
 .trakt-icon-play1-thick:hover,
 .trakt-icon-play2-thick:hover,
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-block::selection {
     background-color: #193b4b!important;
 }
 
@@ -106,7 +112,11 @@ ul.pagination a,
 .panel-body,
 .panel-heading,
 select,
-.form-control {
+.form-control,
+.users-wrapper,
+.tab,
+.tooltip-inner,
+.active .above-comment {
     background-color: #1d1d1d!important;
 }
 
@@ -116,7 +126,7 @@ select,
     border: 1px solid #1d1d1d!important;
 }
 
-header#top-nav img,
+header#top-nav img:not(.avatar),
 .fa-heart,
 .label-vip,
 .trakt-full img,
@@ -136,19 +146,20 @@ header#top-nav img,
 .payment-option,
 .plan-option.selected,
 .plan-option,
-#standard-features {
+#standard-features,
+#top-shows .rank,
+#top-movies .rank,
+.loaded .count {
     filter:invert(1);
 }
 
-.avatar,
 .titles .fa-heart,
 #auth-form-wrapper .auth-services .icon,
 .active.tab-pane,
 .cc {
     filter:invert(0)!important;
 }
-.plan-option.selected {}
-.in-wrapper .btn-primary {}
+
 #main-search .inner {
     background: transparent url("") left center no-repeat;
 }
@@ -181,6 +192,17 @@ select,
 #vip-features-wrapper .inner {
     background: rgba(0,0,0,.9)!important;
 }
+
+#top-shows .selected .stats,
+#top-movies .selected .stats,
+#summary-ratings-wrapper ul.stats {
+    background-color: transparent!important;
+}
+
+#rmjs-1 .shade {
+    display: none;
+}
+
 }
 @-moz-document url-prefix("http://trakt.tv") {
 }
