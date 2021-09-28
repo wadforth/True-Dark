@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Dark-Instagram
-@version        1.0.0
+@version        2.0.0
 @namespace      https://github.com/wadforth/
 @description    True dark theme for Instagram.com
 @author         Kieran
@@ -12,17 +12,73 @@
     color: white!important;
 }
 
-main, .f7Bj3 > div, .JLbVX, .La5L3, a .HVWg4, .-qQT3, .WaOAr, .m82CD, .TGYkm, .JvDyy, ._3wFWr, ._3wFWr .HVWg4, .HcJZg,.oYYFH, .nGS-Y, .-sxBV   {
+main,
+.f7Bj3 > div,
+.JLbVX,
+.La5L3,
+a .HVWg4,
+.-qQT3,
+.WaOAr,
+.m82CD,
+.TGYkm,
+.JvDyy,
+._3wFWr,
+._3wFWr .HVWg4,
+.HcJZg,
+.oYYFH,
+.nGS-Y,
+.-sxBV {
     background-color: #222!important;
 }
 
-._lz6s, .rOtsg,.PS7Gk,.fuQUr:hover, .leaflet-popup-content-wrapper , .XfvCs, .IwRSH.vwCYk, .PVkFi,  .N9abW, ._8UZ6e, .IwRSH.HVWg4,.S-mcP, .GZkEI,  .zGtbP, input, .c7DD5, .Di7vw, .CcYR1, .aOOlW, .Slqrh, .eo2As   {
-    background-color: #1d1d1d!important
+.ItkAi .eGOV_.ybXk5._4EzTm,
+._8UZ6e,
+.aOOlW {
+    border: 1px solid white;
+    padding: 10px;
 }
 
-.s4Iyt,._8-yf5  {
-    filter: invert(1);
+.uL8Hv {
+    margin: 10px !important;
 }
+
+.TOh1s {
+    display: none;
+}
+
+._lz6s,
+.rOtsg,
+.PS7Gk,
+._4EzTm.g6RW6,
+.Dw_ki,
+.vwCYk.g6RW6,
+.fuQUr:hover,
+._54f4m,
+footer,
+.leaflet-popup-content-wrapper,
+.XfvCs,
+.PVkFi,
+.N9abW,
+._8UZ6e,
+.IwRSH.HVWg4,
+.S-mcP,
+.GZkEI,
+.zGtbP,
+input,
+.c7DD5,
+.Di7vw,
+.CcYR1,
+.aOOlW,
+.Slqrh,
+.eo2As {
+    background-color: #1d1d1d!important;
+}
+
+.s4Iyt,
+._8-yf5 {
+    filter:invert(1);
+}
+
 }
 @-moz-document url-prefix("http://instagram.com") {
 }
