@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Dark-Trakt.tv
-@version        3.0.1-final
+@version        3.0.2-final
 @namespace      https://github.com/wadforth/
 @description    True dark theme for Trakt.tv
 @author         Kieran
@@ -56,7 +56,11 @@ ul.pagination a:hover,
 .info > a,
 .vip-actions a,
 #info-wrapper .sidebar .vip-actions li a .fa,
-#info-wrapper ul.additional-stats li a {
+#info-wrapper ul.additional-stats li a,
+.under-info .main-title-sxe,
+.external li a .fa,
+.trailer .icon .fa,
+.site {
     color: #54C7FC!important;
 }
 
@@ -116,7 +120,10 @@ select,
 .users-wrapper,
 .tab,
 .tooltip-inner,
-.active .above-comment {
+.active .above-comment,
+.season-links,
+.under-info .titles,
+.episode-stats {
     background-color: #1d1d1d!important;
 }
 
@@ -149,7 +156,8 @@ header#top-nav img:not(.avatar),
 #standard-features,
 #top-shows .rank,
 #top-movies .rank,
-.loaded .count {
+.loaded .count,
+.label-vip {
     filter:invert(1);
 }
 
@@ -195,7 +203,8 @@ select,
 
 #top-shows .selected .stats,
 #top-movies .selected .stats,
-#summary-ratings-wrapper ul.stats {
+#summary-ratings-wrapper ul.stats,
+.filter-dropdown .dropdown-toggle {
     background-color: transparent!important;
 }
 
