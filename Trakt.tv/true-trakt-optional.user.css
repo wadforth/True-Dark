@@ -1,3 +1,13 @@
+/* ==UserStyle==
+@name           Dark-Trakt.tv
+@version        1.0-optional
+@namespace      https://github.com/wadforth/
+@description    True dark theme for Trakt.tv
+@author         Kieran
+@updateURL      https://raw.githubusercontent.com/wadforth/True-Dark/main/Trakt.tv/true-trakt-optional.user.css
+@license        CC-BY-SA-4.0
+==/UserStyle== */
+@-moz-document domain("trakt.tv") {
 * {
 	color: white!important;
 }
@@ -58,4 +68,7 @@ div[class*="trakt-icon-"]:hover:not(.icon.trakt-icon-check-thick), div[class*="t
 }
 #boxes-wrapper .shade,#watchnow-wrapper .shade,#api-wrapper .shade,.bg-on,.hu-ck-s-t-er-v-i-p-square .inner,#vip-features-wrapper .inner {
 	background: rgba(0,0,0,.9)!important;
+}
+}
+@-moz-document url-prefix("http://trakt.tv") {
 }
