@@ -23,7 +23,7 @@
     <hr>
     <h3 align="left">Entertainment</h3>
             <ul>
-                <li><a href="https://raw.githubusercontent.com/wadforth/True-Dark/main/Trakt.tv/true-trakt.user.css">Trakt.tv</a> - Dashboard, Profile, Settings, Comments, Lists, Payments and Apps Darkened; Fixes included and VIP labels removed. </li>
+                <li><a href="https://raw.githubusercontent.com/wadforth/True-Dark/main/Trakt.tv/true-trakt.user.css">Trakt.tv</a> - Dashboard, Profile, Settings, Comments, Lists, Payments and Apps Darkened; Fixes included and VIP labels removed. <p>Optional style has been added that was created out of personal use. Ads have been removed without the need of adblock, pages have been removed/hidden based on what isn't needed or used by myself, as-well as an updated colour palette with a cleaner look which can be installed <a href="https://raw.githubusercontent.com/wadforth/True-Dark/main/Trakt.tv/true-trakt-optional.user.css">here</a></li>
     </ul>
     <h3>Games</h3>
             <ul>
