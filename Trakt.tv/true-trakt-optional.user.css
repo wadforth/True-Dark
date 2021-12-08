@@ -29,7 +29,7 @@ input::selection, .btn-primary, .progress-bar, .action, #top-movies .selected .r
 input, textarea, b, #scrobblers-wrapper h1,  #scrobblers-wrapper h2, #watchnow-wrapper h1, #watchnow-wrapper h2, #api-wrapper h1, #api-wrapper h2, .col-lg-offset-1 h2, .col-lg-offset-1 h1{
 	color: #1e2124 !important;
 }
-.col-sm-8 h4 a, .titles, #recommendations-movies .titles-link h3, .poster-under .text a, .text .main-title, .format-date, .affix-top b, .username, .col-sm-4 h4 a, .navbar-nav > li > a:hover,.main-title-sxe, .format-date, .stats-wrapper strong, .days, .minutes, .hours, .year, #auth-form-wrapper a, footer a:hover {
+.col-sm-8 h4 a, .titles,.filter-dropdown .selected .icon, #recommendations-shows .titles-link h3, #recommendations-movies .titles-link h3, .poster-under .text a, .text .main-title, .format-date, .affix-top b, .username, .col-sm-4 h4 a, .navbar-nav > li > a:hover,.main-title-sxe, .format-date, .stats-wrapper strong, .days, .minutes, .hours, .year, #auth-form-wrapper a, footer a:hover {
 	color: #7289da !important;
 }
 .trakt-full img, .navbar img:not(.avatar), .logo-wrapper .logo, .trakt-icon-trakt {
@@ -42,13 +42,12 @@ input, textarea, b, #scrobblers-wrapper h1,  #scrobblers-wrapper h2, #watchnow-w
 #progress .col-sm-7, .text b {
 	color: white!important;
 }
-a[href^="/vip/ads"], .bottom img, .c7f7a-c9563-label,.snigel, #adngin-in_content-1-0, .inner .text, [class*="toggle-dark-knight-mode"], .light ,.top .c7f7a-c9563-label {
+a[href^="/vip/ads"], #results-top-wrapper.user-wrapper .buttons,.bottom img, .c7f7a-c9563-label,.snigel, #adngin-in_content-1-0, .inner .text, [class*="toggle-dark-knight-mode"], .light ,.top .c7f7a-c9563-label {
 	display: none;
 }
 [class*="yir-loader"], a[href^="/vip"], a[href^="/widgets"], a[href^="/vip/darkknight"], [class*="toggle-dark-knight-mode"], a[href^="/calendars"], a[href^="/discover"], a[href^="/apps"] {
 	visibility: hidden!important;
 }
-
 body.discover .popular-items-wrapper .popular-item .inner-wrapper .inner, body.discover .popular-items-wrapper .popular-item .inner-wrapper ul.stats, .stats {
 	background-color: transparent!important;
 }
@@ -65,33 +64,27 @@ div[class*="trakt-icon-"]:hover:not(.icon.trakt-icon-check-thick), div[class*="t
 	background-color:#1e2124!important;
 	color:#7289da !important;
 }
-.corner-rating, canvas, #chart-genres-legend, div[class*="rating-"], div[class*="rating-"],.selected .count, .label-vip {
+.corner-rating, canvas, #chart-genres-legend, .c7f7a-grid-item img, div[class*="rating-"], div[class*="rating-"],.selected .count, .label-vip {
 	filter:hue-rotate(var(--value, 195deg));
 }
 #boxes-wrapper .shade,#watchnow-wrapper .shade,#api-wrapper .shade,.bg-on,.hu-ck-s-t-er-v-i-p-square .inner,#vip-features-wrapper .inner {
 	background: rgba(0,0,0,.9)!important;
 }
-.navbar {
-    border-bottom: 1px solid #1e2124 !important;
-}
-.brand-left li, .brand-left a {
-    position: relative!important;
-   margin-left: 0%!important;
-}
-.brand-left {
-    margin-right: -180px!important;
+.navbar, header#top-nav,  .genres-stat-box, #recent-wrapper {
+    border-bottom: 1px solid #424549 !important;
 }
 .navbar img:not(.avatar) {
     position: fixed;
-    left: 86%;
+    left: 20%!important;
 }
 .navbar-user {
-    position: fixed;
-    right: 50px;
+    position: fixed!important;
+    right: 20%!important;
 }
 #user-menu {
     position: fixed;
-    right: 20px; 
+    right: 19%!important; 
+    top: 110%!important;
 }
 .navbar .bottom-wrapper {
     display: none!important;
@@ -102,13 +95,47 @@ div[class*="trakt-icon-"]:hover:not(.icon.trakt-icon-check-thick), div[class*="t
 .visible a {
     padding-top: 20px!important;
 }
-#links-wrapper {
+#links-wrapper,#ondeck-wrapper, #activity-wrapper,  .bottom-shade, #main-search .inner {
     border-top: 1px solid #424549!important;
+    border-bottom: 1px solid #424549!important;
 }
 .two-lines {
     position: fixed;
     top: 25px;
     right: 15%;
+}
+header#top-nav #header-search #header-search-query {
+    float: right!important;
+}
+@media screen and (max-width: 2560px){
+.brand-left a {
+    position: relative!important;
+    padding-left: -300px!important;
+    left: -553%!important;
+    word-spacing: 20px!important;
+}
+header#top-nav #header-search #header-search-button, header#top-nav #header-search #header-search-button,header#top-nav #header-search #header-search-button.btn-primary, .dropdown-toggle ,#header-search-button,header#top-nav #header-search #header-search-query.open {
+     position: relative;
+     left: 333%!important; 
+    border: 1px solid #424549!important;
+}
+}
+@media screen and (max-width: 1920px){
+    .brand-left a {
+    position: relative!important;
+    padding-left: -500px!important;
+    left: -200px!important;
+    word-spacing: 20px!important;
+    }
+    header#top-nav #header-search #header-search-button, header#top-nav #header-search #header-search-button,header#top-nav #header-search #header-search-button.btn-primary, .dropdown-toggle ,#header-search-button,header#top-nav #header-search #header-search-query.open {
+     position: relative;
+     left: 210%!important; 
+    border: 1px solid #424549!important;
+    }
+}
+#header-search-button {
+     position: static!important;
+     left: 60%!important; 
 }
 }
 @-moz-document url-prefix("http://trakt.tv") {
