@@ -20,9 +20,6 @@ select, .no-touch header#top-nav:hover,#info-wrapper .info .action-buttons > .bt
 .featured .shade {
    display: none!important;
 }
-#info-wrapper .affiliate-links .section a {
-    
-}
 input::selection, .btn-primary, .progress-bar, .action, #top-movies .selected .rank {
 	background-color:#7289da !important;
 }
