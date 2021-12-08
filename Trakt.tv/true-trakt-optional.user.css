@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Dark-Trakt.tv
-@version        1.1-optional
+@version        1.2-optional
 @namespace      https://github.com/wadforth/
 @description    True dark theme for Trakt.tv
 @author         Kieran
@@ -17,7 +17,7 @@
 select, .no-touch header#top-nav:hover,#info-wrapper .info .action-buttons > .btn.selected .side-btn, #info-wrapper .affiliate-links .section a,.one-liner ,.focused .above-comment,.focused .formatting-help ,.emojionearea-editor,.wider .above-comment,.btn:not(.hidden-xs .btn):not(#header-search-button),.external a, .tab.selected, .active .above-comment, .subnav-wrapper , .in .users-wrapper ,.popover-title,#watching-now-wrapper .info, .instructions ,.in-wrapper .btn-default , .keep-inline .interactions,.more-top,.alert, .info .list, .seasons,.pagination-top .prev a,.pagination-quick-jump,.pagination-bottom .prev a, .pagination-bottom .next a,.popover-title,.active a,.page a,.pagination-top .next a, .dark,.episodes,.fanarts h4, .filter-dropdown .icon, .wider, .alt, .light,.filter-dropdown .dropdown-toggle, .shadow, #links-wrapper, .top,header#top-nav .navbar-nav li>a:hover, #recommendations-movies .smaller, .no-touch, .poster-under, .stats-wrapper, .vip-signup .btn-primary, .movies, .shows, .dropdown-toggle:focus, .dropdown-menu a:hover, .auth-services-wrapper, section, .label-free, footer {
 	background-color: #1e2124 !important;
 }
-.featured .shade {
+.shade:not(.stat-box .shade) {
    display: none!important;
 }
 input::selection, .btn-primary, .progress-bar, .action, #top-movies .selected .rank {
@@ -26,7 +26,7 @@ input::selection, .btn-primary, .progress-bar, .action, #top-movies .selected .r
 .progress-bar.spacer {
 	background-color: #424549!important;
 }
-input, textarea, b, #scrobblers-wrapper h1, #scrobblers-wrapper h2, #watchnow-wrapper h1, #watchnow-wrapper h2, #api-wrapper h1, #api-wrapper h2, .col-lg-offset-1 h2, .col-lg-offset-1 h1{
+input, textarea, b, #scrobblers-wrapper h1,  #scrobblers-wrapper h2, #watchnow-wrapper h1, #watchnow-wrapper h2, #api-wrapper h1, #api-wrapper h2, .col-lg-offset-1 h2, .col-lg-offset-1 h1{
 	color: #1e2124 !important;
 }
 .col-sm-8 h4 a, .titles, #recommendations-movies .titles-link h3, .poster-under .text a, .text .main-title, .format-date, .affix-top b, .username, .col-sm-4 h4 a, .navbar-nav > li > a:hover,.main-title-sxe, .format-date, .stats-wrapper strong, .days, .minutes, .hours, .year, #auth-form-wrapper a, footer a:hover {
@@ -48,6 +48,7 @@ a[href^="/vip/ads"], .bottom img, .c7f7a-c9563-label,.snigel, #adngin-in_content
 [class*="yir-loader"], a[href^="/vip"], a[href^="/widgets"], a[href^="/vip/darkknight"], [class*="toggle-dark-knight-mode"], a[href^="/calendars"], a[href^="/discover"], a[href^="/apps"] {
 	visibility: hidden!important;
 }
+
 body.discover .popular-items-wrapper .popular-item .inner-wrapper .inner, body.discover .popular-items-wrapper .popular-item .inner-wrapper ul.stats, .stats {
 	background-color: transparent!important;
 }
@@ -64,7 +65,7 @@ div[class*="trakt-icon-"]:hover:not(.icon.trakt-icon-check-thick), div[class*="t
 	background-color:#1e2124!important;
 	color:#7289da !important;
 }
-.corner-rating, canvas, #chart-genres-legend {
+.corner-rating, canvas, #chart-genres-legend, div[class*="rating-"], div[class*="rating-"],.selected .count, .label-vip {
 	filter:hue-rotate(var(--value, 195deg));
 }
 #boxes-wrapper .shade,#watchnow-wrapper .shade,#api-wrapper .shade,.bg-on,.hu-ck-s-t-er-v-i-p-square .inner,#vip-features-wrapper .inner {
@@ -87,7 +88,6 @@ div[class*="trakt-icon-"]:hover:not(.icon.trakt-icon-check-thick), div[class*="t
 .navbar-user {
     position: fixed;
     right: 50px;
- 
 }
 #user-menu {
     position: fixed;
@@ -104,6 +104,11 @@ div[class*="trakt-icon-"]:hover:not(.icon.trakt-icon-check-thick), div[class*="t
 }
 #links-wrapper {
     border-top: 1px solid #424549!important;
+}
+.two-lines {
+    position: fixed;
+    top: 25px;
+    right: 15%;
 }
 }
 @-moz-document url-prefix("http://trakt.tv") {
