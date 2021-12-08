@@ -1,6 +1,6 @@
 <p>
     <h1 align="center"><strong>True-Dark</strong></h1>
-    <h3 align="center">A darker theme for websites who don't have a built-in style, or that is locked behind a paywall</h3>
+    <h3 align="center">A darker theme for websites who don't have a built-in style, or that is locked behind a paywall - aimed at 1080p/1440p displays</h3>
     <p align="center">
 <hr>
 <p>
