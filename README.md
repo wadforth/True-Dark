@@ -1,6 +1,6 @@
 <p>
     <h1 align="center"><strong>True-Dark</strong></h1>
-    <h3 align="center">A darker theme for websites who don't have a built-in style, or that is locked behind a paywall - aimed at 1080p/1440p displays</h3>
+    <h3 align="center">A darker theme for websites who don't have a built-in style, or that is locked behind a paywall</h3>
     <p align="center">
 <hr>
 <p>
@@ -45,5 +45,5 @@
                 <li><b>Reddit</b> - <i>Coming Soon...</i></li>
     </ul>
     </ol>
-     <h3 align="center"><b>Disclaimer:</b> All themes created whilst uBlock is enabled, any Ads that may show may break the theme; if they do, raise an issue with website and ad location and i'll get it sorted.</h3>
+     <h3 align="center"><b>Disclaimer:</b> All themes created whilst uBlock is enabled, any Ads that may show may break the theme; if they do, raise an issue with website and ad location and i'll get it sorted. Any rearranging of elements will be aimed at 1080p/1440p resolutions, because who uses anything less?</h3>
 </p>
