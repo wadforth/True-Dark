@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Dark-Instagram
-@version        2.0.0
+@version        2.0.1
 @namespace      https://github.com/wadforth/
 @description    True dark theme for Instagram.com
 @author         Kieran
@@ -11,7 +11,6 @@
 * {
     color: white!important;
 }
-
 main,
 .f7Bj3 > div,
 .JLbVX,
@@ -28,24 +27,23 @@ a .HVWg4,
 .oYYFH,
 .nGS-Y,
 .-sxBV {
-    background-color: #222!important;
+    background-color: #282b30!important;
 }
-
 .ItkAi .eGOV_.ybXk5._4EzTm,
 ._8UZ6e,
-.aOOlW {
-    border: 1px solid white;
+.aOOlW,
+.VideM,
+.Ppjfr,
+{
+    border: 1px solid #424549!important;
     padding: 10px;
 }
-
 .uL8Hv {
     margin: 10px !important;
 }
-
 .TOh1s {
     display: none;
 }
-
 ._lz6s,
 .rOtsg,
 .PS7Gk,
@@ -70,15 +68,16 @@ input,
 .CcYR1,
 .aOOlW,
 .Slqrh,
-.eo2As {
-    background-color: #1d1d1d!important;
+.eo2As,
+.ItkAi .eGOV_.ybXk5._4EzTm,
+.-qQT3 .HVWg4,
+.pbgfb {
+    background-color: #1e2124 !important;
 }
-
 .s4Iyt,
 ._8-yf5 {
     filter:invert(1);
 }
-
 }
 @-moz-document url-prefix("http://instagram.com") {
 }
