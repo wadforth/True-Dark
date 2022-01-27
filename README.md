@@ -44,6 +44,10 @@
                 <li><a href="https://raw.githubusercontent.com/wadforth/True-Dark/main/instagram.com/true-instagram.user.css">Instagram</a> - Home, Profile, Settings, Posts, Mini-Profiles and Explore Darkened; Fixes included and t&C popups removed. </li>
                 <li><b>Reddit</b> - <i>Coming Soon...</i></li>
     </ul>
+    <h3>Search Engine</h3>
+            <ul>
+                <li><a href="https://raw.githubusercontent.com/wadforth/True-Dark/main/Bing/true-bing.user.css">Bing</a> - Landing Page, Search Page, Video, Images.</li>
+    </ul>
     </ol>
      <h3 align="center"><b>Disclaimer:</b> All themes created whilst uBlock is enabled, any Ads that may show may break the theme; if they do, raise an issue with website and ad location and i'll get it sorted. Any rearranging of elements will be aimed at 1080p/1440p resolutions, because who uses anything less?</h3>
 </p>
