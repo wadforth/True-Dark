@@ -1,6 +1,6 @@
 /* ==UserStyle ==
 @name       Dark-Bing
-@version    1.0
+@version    1.1
 @namespace  https://github.com/wadforth/
 @author     Kieran
 @updateURL  https://raw.githubusercontent.com/wadforth/True-Dark/main/Bing/true-bing.user.css
@@ -32,7 +32,7 @@ html, body {
     color: #d47d3f!important;
 }
 
-#modern-flyout, .promo_card, .b_subtitle, .b_footnote, .bnc-flyout__notifications, .as_foot, .as_rmhswarningtxt, cite, .mc_vtvc_meta_row, .b_primtxt{
+#modern-flyout, .promo_card, .b_subtitle, .b_footnote, .bnc-flyout__notifications, .as_foot, .as_rmhswarningtxt, cite, .mc_vtvc_meta_row, .b_primtxt, .b_dList, strong {
     color: white!important;
 }
 
