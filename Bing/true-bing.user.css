@@ -1,0 +1,60 @@
+/* ==UserStyle ==
+@name       Dark-Bing
+@version    1.0
+@namespace  https://github.com/wadforth/
+@author     Kieran
+@updateURL  https://raw.githubusercontent.com/wadforth/True-Dark/main/Bing/true-bing.user.css
+@license    CC-BY-SA-4.0
+==/UserStyle== */
+
+html, body {
+    width:100%!important;
+}
+
+.img_cont, .rw-carsl, .banner_cont, .fp_row:hover, .hb_section:hover, .hb_section:focus, li:hover, #b_content, .mc_vtvc_meta, .b_widePag:hover {
+    background-color: #252525!important;
+}
+
+.sb_form, #modern-flyout, .bnc-f, #HBContent, .sa_drw, #as_foot, #b_header, .b_algo, .b_ans, .scs_cc, #fbpgbt, .b_footer, #id_d, #rfPane, .items{
+    background-color: #292929!important;
+}
+
+.icon, .rh_meter, .separator, .idp_ham, #hideShowCaro, .mfa_btn {
+    filter:invert(100%);
+}
+
+.header, #b_header {
+    padding-top: 15px;
+    border-bottom: 1px solid #d47d3f;
+}
+
+.hp_body.no_image #id_h *:not([class^="bn"]), .b_mText, .bnc-ftn, input, .sa_tm_text, a, .hb_title_col, .b_expansion_text,#id_d > h2 {
+    color: #d47d3f!important;
+}
+
+#modern-flyout, .promo_card, .b_subtitle, .b_footnote, .bnc-flyout__notifications, .as_foot, .as_rmhswarningtxt, cite, .mc_vtvc_meta_row, .b_primtxt{
+    color: white!important;
+}
+
+#modern-flyout, #HBContent, .b_algo, .b_ans, .mc_vtvc_meta, #id_d {
+    border: 1px solid #d47d3f;
+}
+
+#sw_as {
+    display:none;
+}
+
+.b_algo, .b_ans {
+    margin-bottom: 3%!important;
+}
+
+.mc_vtvc_title {
+    color: grey!important;
+}
+
+.scs_box {
+    border: 2px solid #d47d3f;
+}
+@-moz-document url-prefix("http://bing.com"){
+    
+}
