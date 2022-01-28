@@ -1,6 +1,6 @@
 /* ==UserStyle ==
 @name       Dark-Bing
-@version    1.1
+@version    1.2
 @namespace  https://github.com/wadforth/
 @author     Kieran
 @updateURL  https://raw.githubusercontent.com/wadforth/True-Dark/main/Bing/true-bing.user.css
@@ -11,11 +11,11 @@ html, body {
     width:100%!important;
 }
 
-.img_cont, .rw-carsl, .banner_cont, .fp_row:hover, .hb_section:hover, .hb_section:focus, li:hover, #b_content, .mc_vtvc_meta, .b_widePag:hover {
+.img_cont, .rw-carsl, .banner_cont, .fp_row:hover, .hb_section:hover, .hb_section:focus, li:hover, #b_content, .mc_vtvc_meta, .b_widePag:hover, .ent-dtab-style-content, .b_wpTabsWrapper, .scs_arw {
     background-color: #252525!important;
 }
 
-.sb_form, #modern-flyout, .bnc-f, #HBContent, .sa_drw, #as_foot, #b_header, .b_algo, .b_ans, .scs_cc, #fbpgbt, .b_footer, #id_d, #rfPane, .items{
+.sb_form, #modern-flyout, .bnc-f, #HBContent, .sa_drw, #as_foot, #b_header, .b_algo, .b_ans, .scs_cc, #fbpgbt, .b_footer, #id_d, #rfPane, .items, .ent-dtab-ovr, .ent-dtab-btn, .b_searchboxForm, .lite-entcard-blk , .l_ecrd_bkg_hlt, .lite-entcard-exp, .exp-rs {
     background-color: #292929!important;
 }
 
@@ -28,15 +28,15 @@ html, body {
     border-bottom: 1px solid #d47d3f;
 }
 
-.hp_body.no_image #id_h *:not([class^="bn"]), .b_mText, .bnc-ftn, input, .sa_tm_text, a, .hb_title_col, .b_expansion_text,#id_d > h2 {
+.hp_body.no_image #id_h *:not([class^="bn"]), .b_mText, .bnc-ftn, input, .sa_tm_text, a, .hb_title_col, .b_expansion_text,#id_d > h2, .l_ecrd_txt_gl, .lite-entcard-exp > h2{
     color: #d47d3f!important;
 }
 
-#modern-flyout, .promo_card, .b_subtitle, .b_footnote, .bnc-flyout__notifications, .as_foot, .as_rmhswarningtxt, cite, .mc_vtvc_meta_row, .b_primtxt, .b_dList, strong {
+#modern-flyout, .promo_card, .b_subtitle, .b_footnote, .bnc-flyout__notifications, .as_foot, .as_rmhswarningtxt, cite, .mc_vtvc_meta_row, .b_primtxt, .b_dList {
     color: white!important;
 }
 
-#modern-flyout, #HBContent, .b_algo, .b_ans, .mc_vtvc_meta, #id_d {
+#modern-flyout, #HBContent, .b_algo, .b_ans, .mc_vtvc_meta, #id_d, .ent-dtab-ovr, .ent-dtab-btn, .ent-dtab-style-content, a.ent-dtab-ovr, a.ent-dtab-rt {
     border: 1px solid #d47d3f;
 }
 
