@@ -1,6 +1,6 @@
 /* ==UserStyle ==
 @name       Dark-Bing
-@version    1.2
+@version    1.3
 @namespace  https://github.com/wadforth/
 @author     Kieran
 @updateURL  https://raw.githubusercontent.com/wadforth/True-Dark/main/Bing/true-bing.user.css
@@ -15,7 +15,7 @@ html, body {
     background-color: #252525!important;
 }
 
-.sb_form, #modern-flyout, .bnc-f, #HBContent, .sa_drw, #as_foot, #b_header, .b_algo, .b_ans, .scs_cc, #fbpgbt, .b_footer, #id_d, #rfPane, .items, .ent-dtab-ovr, .ent-dtab-btn, .b_searchboxForm, .lite-entcard-blk , .l_ecrd_bkg_hlt, .lite-entcard-exp, .exp-rs {
+.sb_form, #modern-flyout, .bnc-f, #HBContent, .sa_drw, #as_foot, #b_header, .b_algo, .b_ans, .scs_cc, #fbpgbt, .b_footer, #id_d, #rfPane, .items, .ent-dtab-ovr, .ent-dtab-btn, .b_searchboxForm, .lite-entcard-blk , .l_ecrd_bkg_hlt, .lite-entcard-exp, .exp-rs, .video_metadata, .wide_wideAlgo{
     background-color: #292929!important;
 }
 
@@ -32,7 +32,7 @@ html, body {
     color: #d47d3f!important;
 }
 
-#modern-flyout, .promo_card, .b_subtitle, .b_footnote, .bnc-flyout__notifications, .as_foot, .as_rmhswarningtxt, cite, .mc_vtvc_meta_row, .b_primtxt, .b_dList {
+#modern-flyout, .promo_card, .b_subtitle, .b_footnote, .bnc-flyout__notifications, .as_foot, .as_rmhswarningtxt, cite, .mc_vtvc_meta_row, .b_primtxt, .b_dList, #sp_requery, #sp_recourse, .qna_elc .rwrl, .df_c .rwrl, #b_results .df_c .b_entityTitle {
     color: white!important;
 }
 
